@@ -80,7 +80,9 @@
 }
 
 .timeline-spacer {
-  width: 200px;
+  min-width: 120px;
+  max-width: 260px;
+  width: 100%;
   display: inline-block;
 }
 
@@ -121,14 +123,22 @@
 }
 
 .task-name {
-  width: 200px;
+  min-width: 120px;
+  max-width: 260px;
+  width: 100%;
   padding-right: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
+  overflow: hidden;
+}
+
+.task-name-text {
   font-size: 0.875rem;
   color: #2D3748;
-  flex-shrink: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .expand-icon {
